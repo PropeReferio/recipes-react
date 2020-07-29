@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Menu from './components/Menu';
 import * as serviceWorker from './serviceWorker';
+import data from "./data/recipes.json";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Menu recipes={data} />
   </React.StrictMode>,
   document.getElementById('root')
 );
